@@ -8,6 +8,40 @@
 </head>
 <body>
   
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">MyWebSite</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="collapse nav-bar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 3 <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Page 3-1</a></li>
+              <li><a href="#">Page 3-2</a></li>
+              <li><a href="#">Page 3-3</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sing Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+  
   <div class="container">
     <div class="jumbotron">
       <h1>HELLO WELCOME TO THE WEBSITE</h1>
@@ -17,11 +51,19 @@
   </div>
 
   <div class="container">
-    <ul class="nav nav-pills nav-stacked">
+    <ul class="nav nav-pills">
       <li class="active"><a href="#">Home</a></li>
       <li><a href="#">Menu 1</a></li>
       <li><a href="#">Menu 2</a></li>
-      <li><a href="#">Menu 3</a></li>
+<li class="dropdown">
+  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 3 <span class="caret"></span></a>
+  <ul class="dropdown-menu">
+    <li><a href="#">Sub 3-1</a></li>
+    <li><a href="#">Sub 3-2</a></li>
+    <li><a href="#">Sub 3-3</a></li>
+    <li><a href="#">Sub 3-4</a></li>
+  </ul>
+  </li>
     </ul>
   </div>
 

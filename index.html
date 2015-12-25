@@ -36,7 +36,12 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="./signup.html"><span class="glyphicon glyphicon-user"></span> Sing Up</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          <li>
+            <a href="#" data-toggle="modal" data-target="#loginModal">
+              <span class="glyphicon glyphicon-log-in"></span>
+              Login
+            </a>
+          </li>
         </ul>
       </div>
       
@@ -95,6 +100,45 @@
     <button class="btn btn-success btn-sm">success</button>
     <button class="btn btn-success btn-xs">success</button>
     <button class="btn btn-link btn-xs">Search<span class="glyphicon glyphicon-search icon-pad-left"></span></button>
+  </div>
+
+  <!-- create a modal element -->
+  <div class="modal-fade" id="loginModal" tabindex="-1">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+
+        <!-- The modal header -->
+        <div class="modal-header">
+          <button type="button" class="close"
+                  data-dismiss="modal">x</button>
+          <h4 class="modal-title" id="loginModalLabel"> Login</h4>
+        </div>
+
+        <!-- The modal body -->
+        <div class="modal-body">
+          <div class="form-group" id="inputUserIDFormGroup">
+            <label class="control-label" for="inputUserID">
+                   User ID</label>
+            <input class="form-control" type="text" 
+                   id="inputUserID" placeholder="Enter your user ID">
+          </div>
+          <div class="form-group" id="inputPasswordFormGroup">
+            <label class="control-label" for="inputPassword">
+                   Password</label>
+            <input class="form-control" type="text"
+                   id="inputPassword" placeholder="Enter your password">
+          </div>
+        </div>
+
+        <!-- The modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default"
+                  data-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+
+      </div>
+    </div>
   </div>
 
   <script src="./component/jquery.min.js"></script>

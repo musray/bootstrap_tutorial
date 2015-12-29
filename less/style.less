@@ -1,0 +1,32 @@
+@black: #000000;
+@dark-gray: #333333;
+@light-gray: #777777;
+@lighter-gray: #eeeeee;
+@style-padding: 10px;
+@style-margin: 5px;
+
+.black-padded {
+  color: @black;
+  padding: @style-padding;
+}
+
+.black-padded-light {
+  .black-padded;
+  background-color: @light-gray;
+}
+
+.style1 {
+  .black-padded;
+  background-color: @lighter-gray;
+}
+
+.style2 {
+  .black-padded-light;
+  margin: @style-margin;
+}
+
+.style3 {
+  .black-padded-light;
+  text-align: center;
+  border: 1px solid @dark-gray;
+}

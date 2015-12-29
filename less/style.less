@@ -1,9 +1,10 @@
 @black: #000000;
-@dark-gray: #333333;
-@light-gray: #777777;
-@lighter-gray: #eeeeee;
+@dark-gray: lighten(@black, 20%);
+@light-gray: lighten(@black, 46.7%);
+@lighter-gray: lighten(@black, 93.5%);
 @style-padding: 10px;
 @style-margin: 5px;
+@content-font-size: 10px;
 
 .black-padded {
   color: @black;
@@ -29,4 +30,18 @@
   .black-padded-light;
   text-align: center;
   border: 1px solid @dark-gray;
+}
+
+#content {
+  padding: @style-padding;
+  text-align: justify;
+
+  .title {
+    font-weight: bold;
+    font-size: @content-font-size * 2;
+  }
+
+  .detail {
+    font-size: @content-font-size;
+  }
 }

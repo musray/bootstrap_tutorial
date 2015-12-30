@@ -1,3 +1,22 @@
 .icon-pad-left {
   margin-left: 2px;
 }
+
+.navbar {
+  margin-bottom: 1px;
+}
+
+.slide1 {
+  background-image: linear-gradient(#873c3c, #873c3c);
+  height: 300px;
+}
+
+.slide2 {
+  background-image: linear-gradient(#abc39f,#abc39f);
+  height: 300px;
+}
+
+.slide3 {
+  background-image: linear-gradient(#4c1ecc,#4c1ecc);
+  height: 300px;
+}

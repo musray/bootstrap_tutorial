@@ -48,13 +48,77 @@
     </div>
   </nav>
   
-  <div class="container">
-    <div class="jumbotron">
-      <h1>HELLO WELCOME TO THE WEBSITE</h1>
-      <p>vise title</p>
-      <button class="btn btn-success btn-lg">success</button>
-    </div>
-  </div>
+  <!-- <div class="container"> -->
+    <!-- <div class="jumbotron"> -->
+    <!--   <h1>HELLO WELCOME TO THE WEBSITE</h1> -->
+    <!--   <p>vise title</p> -->
+    <!--   <button class="btn btn-success btn-lg">success</button> -->
+    <!-- </div> -->
+    <div id="mycarousel" class="carousel slide" data-ride="Carousel">
+
+      <!-- carousel indicator -->
+      <ol class="carousel-indicators">
+        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#mycarousel" data-slide-to="1"></li>
+        <li data-target="#mycarousel" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner">
+
+        <!-- carousel item -->
+        <div class="item active">
+          <div class="slide1"></div>
+          <div class="carousel-caption">
+            <h1>Hello, welcome to my website!</h1>
+            <p>
+            Watch this page grow as we use more and more conponents 
+            from Bootstrap!
+            </p>
+            <p>
+            <a class="btn btn-primary btn-sm" href="#">More Detail</a>
+            </p>
+          </div>  <!-- caption -->
+        </div>  <!-- item active -->
+
+        <!-- carousel item -->
+        <div class="item">
+          <div class="slide2"></div>
+          <div class="carousel-caption">
+            <h1>It's a breeze.</h1>
+            <p>
+            Develp great looking website quickly and easily!
+            </p>
+          </div>
+        </div>  <!-- item -->
+
+        <!-- carousel item -->
+        <div class="item">
+          <div class="slide3"></div>
+          <div class="carousel-caption">
+            <h1>And it's responsive, too.</h1>
+            <p>
+              Create a website that looks great
+              on any device.
+            </p>
+          </div>
+        </div>  <!-- item -->
+
+      </div>  <!-- carousel inner -->
+      
+      <!-- left control -->
+      <a class="left carousel-control" href="#mycarousel"
+         data-slide="prev">
+         <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+
+      <!-- right control -->
+      <a class="right carousel-control" href="#mycarousel"
+         data-slide="next">
+         <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+
+    </div>  <!-- my carousel -->
+  <!-- </div> -->
 
   <div class="container">
     <ul class="nav nav-pills">
